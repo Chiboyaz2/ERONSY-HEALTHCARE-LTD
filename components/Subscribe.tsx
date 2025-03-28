@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { useForm } from 'react-hook-form';
+import { useForm, SubmitHandler } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import emailjs from '@emailjs/browser';
@@ -15,6 +15,8 @@ const formSchema = z.object({
   email: z.string().email('Please enter a valid email address'),
 });
 
+type FormData = z.infer<typeof formSchema>;
+
 const Subscribe = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -23,11 +25,11 @@ const Subscribe = () => {
     handleSubmit,
     reset,
     formState: { errors },
-  } = useForm({
+  } = useForm<FormData>({
     resolver: zodResolver(formSchema),
   });
 
-  const onSubmit = async (data: z.infer<typeof formSchema>) => {
+  const onSubmit: SubmitHandler<FormData> = async (data) => {
     setIsSubmitting(true);
     try {
       await emailjs.send(
@@ -74,7 +76,9 @@ const Subscribe = () => {
                 className="w-full"
               />
               {errors.name && (
-                <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>
+                <p className="text-red-500 text-sm mt-1">
+                  {errors.name.message as string}
+                </p>
               )}
             </div>
             <div>
@@ -85,7 +89,9 @@ const Subscribe = () => {
                 className="w-full"
               />
               {errors.email && (
-                <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>
+                <p className="text-red-500 text-sm mt-1">
+                  {errors.email.message as string}
+                </p>
               )}
             </div>
             <Button
