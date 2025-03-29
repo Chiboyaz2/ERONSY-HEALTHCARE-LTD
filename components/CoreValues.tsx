@@ -7,27 +7,27 @@ const values = [
   {
     icon: Shield,
     title: "Integrity",
-    description: "Maintaining the highest standards of professional ethics and transparency in all our interactions."
+    description: "Speaking with our candidates is not enough; acting morally is crucial when working with individuals whose responsibility it is to look after the health and wellness of others. Consequently, we always do our business with honesty, respect for our service users, and one another."
   },
   {
     icon: Heart,
     title: "Passion",
-    description: "Dedicated to making a positive difference in the lives of those we serve with genuine care."
+    description: "Our staff are intense emotional commitment and dedication to the work they do and the purpose it serves. This means a deep interest, enjoyment, and personal fulfilment derived from the wellbeing of service users. "
   },
   {
     icon: Lightbulb,
     title: "Innovativeness",
-    description: "Continuously improving our services through creative solutions and modern healthcare practices."
+    description: "We believe the only thing that constant in life is changes hence we always introduce new ideas and continuous improvement to challenge the conventional wisdom in meeting the needs of our service users.  "
   },
   {
     icon: Target,
     title: "Determination",
-    description: "Committed to achieving the best possible outcomes for our clients through persistent effort."
+    description: "We are resilience to pursue business objectives, even in the face of difficulties and uncertainties. The team maintain a positive mindset which enables us to understand the needs of service users and develop personalize solutions. "
   },
   {
     icon: Users,
     title: "Patient-Centeredness",
-    description: "Focusing on individual needs and preferences to deliver personalized care solutions."
+    description: "Servicer users are the heart of our activities. We prioritize their needs in seamless transitions, effective communication, and collaboration with other professionals in rendering our service."
   }
 ];
 
@@ -60,7 +60,7 @@ const CoreValues = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
             >
-              <value.icon className="h-12 w-12 text-secondary mb-4" />
+              <value.icon className="h-12 w-12 text-[#026FBF] mb-4" />
               <h3 className="text-xl font-semibold mb-3 font-montserrat">{value.title}</h3>
               <p className="text-foreground/70">{value.description}</p>
             </motion.div>

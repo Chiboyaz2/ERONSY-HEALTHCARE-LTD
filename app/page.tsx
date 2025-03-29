@@ -32,7 +32,7 @@ export default function Home() {
       <CoreValues />
       <Services />
       <Testimonials />
-      <Subscribe />
+      {/* <Subscribe /> */}
       <CTA />
       <Footer />
     </motion.main>

@@ -1,8 +1,9 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { Award, Users, Brain, Heart } from 'lucide-react';
+import { Award, Users, Brain, Heart, Target, Eye } from 'lucide-react';
 import Image from 'next/image';
+import Nurse from '@/app/images/Nurse.jpg'
 
 const About = () => {
   return (
@@ -16,38 +17,52 @@ const About = () => {
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-primary font-montserrat mb-6">
-              About Eronsy Healthcare
+              About Eronsy Healthcare Ltd 
             </h2>
             <p className="text-lg text-foreground/80 mb-8">
-              Founded in 2021 to address evolving healthcare needs, Eronsy Healthcare Ltd brings together over 20 years of combined management experience in specialized care services. Our focus spans learning difficulties, mental health support, and substance abuse recovery.
+            Eronsy Healthcare Ltd is a group of passion driven professionals that provides quality health care service delivery to persons with learning difficulties, mental health challenges, and history of substance abuse. Our services are tailored to meet the needs of service users. 
             </p>
             <div className="grid grid-cols-2 gap-6">
               <div className="flex items-start space-x-3">
-                <Award className="h-6 w-6 text-secondary" />
+                <Award className="h-6 w-6 text-[#026FBF]" />
                 <div>
                   <h3 className="font-semibold mb-1">Excellence</h3>
                   <p className="text-sm text-foreground/70">20+ years experience</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Users className="h-6 w-6 text-secondary" />
+                <Users className="h-6 w-6 text-[#026FBF]" />
                 <div>
                   <h3 className="font-semibold mb-1">Expert Team</h3>
                   <p className="text-sm text-foreground/70">Dedicated professionals</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Brain className="h-6 w-6 text-secondary" />
+                <Brain className="h-6 w-6 text-[#026FBF]" />
                 <div>
                   <h3 className="font-semibold mb-1">Specialized Care</h3>
                   <p className="text-sm text-foreground/70">Mental health focus</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Heart className="h-6 w-6 text-secondary" />
+                <Heart className="h-6 w-6 text-[#026FBF]" />
                 <div>
                   <h3 className="font-semibold mb-1">Compassionate</h3>
                   <p className="text-sm text-foreground/70">Patient-centered care</p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <Target className="hidden lg:block h-20 w-20 text-[#026FBF]" />
+                <div>
+                  <h3 className="font-semibold mb-1">MISSION STATEMENT:</h3>
+                  <p className="text-sm text-foreground/70">To contribute to the overall healthcare team by promoting highest standards of professionalism that will exceed the expectation of service users. </p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <Eye className="h-20 w-20 hidden lg:block text-[#026FBF]" />
+                <div>
+                  <h3 className="font-semibold mb-1">VISION STATEMENT:</h3>
+                  <p className="text-sm text-foreground/70">To be recognized as integral members of the healthcare team through our exceptional support and dedication to improving the wellbeing of services users.</p>
                 </div>
               </div>
             </div>
@@ -61,7 +76,7 @@ const About = () => {
             className="relative h-[500px] rounded-2xl overflow-hidden"
           >
             <Image
-              src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?auto=format&fit=crop&q=80"
+              src={Nurse}
               alt="Healthcare Team"
               fill
               className="object-cover rounded-2xl"

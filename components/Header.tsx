@@ -32,8 +32,8 @@ const Header = () => {
     <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 shadow-md backdrop-blur-sm' : 'bg-transparent'
+      className={`fixed w-full z-50 transition-all duration-300 bg-white/95 shadow-md backdrop-blur-sm ${
+        isScrolled ? '' : ''
       }`}
     >
       <div className="container mx-auto px-4 py-4">
@@ -48,22 +48,22 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className={`hover:text-primary transition-colors ${
-                  isScrolled ? 'text-foreground' : 'text-white'
+                className={`hover:text-primary transition-colors text-foreground ${
+                  isScrolled ? '' : ''
                 }`}
               >
                 {item.name}
               </a>
             ))}
-            <Button className="bg-accent hover:bg-accent/90">
+            <Button className="bg-[#E53A32] hover:bg-[#E53A32]/90">
               Request Care Consultation
             </Button>
           </nav>
 
           {/* Mobile Menu Button */}
           <button
-            className={`lg:hidden transition-colors ${
-              isScrolled || isMobileMenuOpen ? 'text-foreground' : 'text-white'
+            className={`lg:hidden transition-colors text-foreground ${
+              isScrolled || isMobileMenuOpen ? '' : ''
             }`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
@@ -89,7 +89,7 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
-              <Button className="bg-accent hover:bg-accent/90 w-full">
+              <Button className="bg-[#E53A32] hover:bg-[#E53A32]/90 w-full">
                 Request Care Consultation
               </Button>
             </div>

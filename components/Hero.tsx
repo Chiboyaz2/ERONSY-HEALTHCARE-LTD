@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -31,12 +32,16 @@ const Hero = () => {
               Patient-centered support services tailored to individual needs
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-accent hover:bg-accent/90">
-                Our Services
-              </Button>
-              <Button size="lg" variant="outline" className="text-[#333333] border-white hover:bg-white/10">
-                Contact Us
-              </Button>
+              <Link href="#services">
+                <Button size="lg" className="bg-[#E53A32] hover:bg-[#E53A32]/90">
+                  Our Services
+                </Button>
+              </Link>
+              <a href="tel:+447448319130">
+                <Button size="lg" variant="outline" className="text-[#333333] border-white hover:bg-white/10">
+                  Contact Us
+                </Button>
+              </a>
             </div>
           </motion.div>
 
