@@ -4,43 +4,50 @@ import { motion } from 'framer-motion';
 import { Bath, Activity, Armchair as Wheelchair, Pill, Utensils, MessageCircle, Sparkles } from 'lucide-react';
 import Image from 'next/image';
 import ECG from '@/app/images/Medical Device.jpg'
+import Infection from '@/app/images/Infection control.jpg'
 
 const services = [
   {
     icon: Bath,
     title: "Personal Care",
-    description: "Comprehensive assistance with daily hygiene and grooming needs",
+    description: "We provide personal hygiene activities such as bathing, dressing, grooming, toileting, and oral care. We ensure the comfort and dignity of patients while promoting independence to the extent possible.",
     image: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80"
   },
   {
     icon: Activity,
     title: "Vital Signs Monitoring",
-    description: "Regular health monitoring and documentation",
+    description: "We measure and record vital signs such as blood pressure, heart rate, temperature, and respiratory rate.",
     image: ECG,
   },
   {
     icon: Wheelchair,
     title: "Mobility Assistance",
-    description: "Support with safe movement and transfer activities",
+    description: "We assist service users with mobility needs, including assisting with walking, transferring from beds to chairs, or using mobility aids. ",
     image: "https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&q=80"
   },
   {
     icon: Pill,
     title: "Medication Support",
-    description: "Medication management and administration assistance",
+    description: "We assist with medication management, which can involve reminding services users to take medications, and ensuring medication compliance. ",
     image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80"
   },
   {
     icon: Utensils,
     title: "Daily Activities",
-    description: "Assistance with meals and daily living activities",
+    description: "We provide support with daily activities, such as feeding service users’ who need assistance, and providing appropriate nutrition and hydration support.",
     image: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80"
   },
   {
     icon: MessageCircle,
     title: "Supportive Care",
-    description: "Emotional support and companionship services",
+    description: "We offer emotional support and companionship to services users, providing a compassionate and reassuring presence. We engage in conversation and offer empathy and encouragement.",
     image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80"
+  },
+  {
+    icon: MessageCircle,
+    title: "Infection Control and Cleanliness",
+    description: "We adhere to proper hand hygiene protocols, assist with environmental cleaning, and follow infection prevention guidelines to minimize the risk of infections.",
+    image: Infection,
   }
 ];
 
@@ -59,7 +66,7 @@ const Services = () => {
             Our Comprehensive Care Services
           </h2>
           <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
-            Tailored support for individuals with special needs, delivered with compassion and expertise
+            We provide quality care, promoting service users’ comfort, and supporting the overall healthcare team.
           </p>
         </motion.div>
 
@@ -73,7 +80,7 @@ const Services = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="service-card bg-white rounded-xl shadow-lg overflow-hidden"
             >
-              <div className="relative h-48">
+              <div className="relative h-48 lg:h-[250px]">
                 <Image
                   src={service.image}
                   alt={service.title}
@@ -82,7 +89,7 @@ const Services = () => {
                 />
               </div>
               <div className="p-6">
-                <service.icon className="h-8 w-8 text-secondary mb-4" />
+                <service.icon className="h-8 w-8 text-[#026FBF] mb-4" />
                 <h3 className="text-xl font-semibold mb-2 font-montserrat">{service.title}</h3>
                 <p className="text-foreground/70">{service.description}</p>
               </div>

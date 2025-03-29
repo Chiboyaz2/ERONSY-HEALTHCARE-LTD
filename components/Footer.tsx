@@ -60,8 +60,9 @@ const Footer = () => {
             <h3 className="font-semibold mb-4">Contact Us</h3>
             <address className="not-italic space-y-2 text-white/80">
               <p>10 Hampton Close</p>
-              <p>London, UK</p>
-              <p>Phone: (020) 123-4567</p>
+              <p>Coalville, LE67 4DH</p>
+              <p>Leicestershire, UK</p>
+              <p>Phone: +447448319130</p>
               <p>Email:  admin@eronsyhealthcare.co.uk </p>
             </address>
           </div>

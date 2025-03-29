@@ -5,7 +5,7 @@ import { Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const CTA = () => {
-  const phoneNumber = "+2347040524341"; // Note: Removed formatting for tel: link
+  const phoneNumber = "+447448319130"; // Note: Removed formatting for tel: link
   const emailAddress = "admin@eronsyhealthcare.co.uk";
 
   const handleCallClick = () => {
@@ -39,7 +39,7 @@ const CTA = () => {
               onClick={handleCallClick}
             >
               <Phone className="h-5 w-5" />
-              Call Now: (020) 123-4567
+              Call Now: +447448319130
             </Button>
             <Button
               size="lg"
