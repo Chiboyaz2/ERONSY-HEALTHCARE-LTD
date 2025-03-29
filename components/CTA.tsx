@@ -5,6 +5,17 @@ import { Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const CTA = () => {
+  const phoneNumber = "+2347040524341"; // Note: Removed formatting for tel: link
+  const emailAddress = "admin@eronsyhealthcare.co.uk";
+
+  const handleCallClick = () => {
+    window.location.href = `tel:${phoneNumber}`;
+  };
+
+  const handleEmailClick = () => {
+    window.location.href = `mailto:${emailAddress}`;
+  };
+
   return (
     <section className="py-20 cta-gradient">
       <div className="container mx-auto px-4">
@@ -24,7 +35,8 @@ const CTA = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button
               size="lg"
-              className="bg-white text-accent hover:bg-white/90 flex items-center gap-2"
+              className="bg-white text-[#E53A32] hover:bg-white/90 flex items-center gap-2"
+              onClick={handleCallClick}
             >
               <Phone className="h-5 w-5" />
               Call Now: (020) 123-4567
@@ -33,6 +45,7 @@ const CTA = () => {
               size="lg"
               variant="outline"
               className="border-white text-[#333333] hover:bg-white/10 flex items-center gap-2"
+              onClick={handleEmailClick}
             >
               <Mail className="h-5 w-5" />
               Email Us
