@@ -55,7 +55,7 @@ const Testimonials = () => {
               className="bg-white p-6 rounded-xl shadow-lg h-fit  lg:h-[250px] flex flex-col items-start justify-between"
             >
               <div>
-                <Quote className="h-8 w-8 text-[#026FBF] mb-4" />
+                <Quote className="h-8 w-8 text-[#E53A32] mb-4" />
                 <p className="text-foreground/80 mb-6">{testimonial.quote}</p>
               </div>
               

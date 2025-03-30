@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Heart, Menu, X } from 'lucide-react';
+import { Heart, Menu, X, Facebook, Twitter, Instagram, Linkedin as LinkedIn } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Logo from '@/app/images/Eronsy-removebg-preview.png'
 import Image from 'next/image';
@@ -55,9 +55,20 @@ const Header = () => {
                 {item.name}
               </a>
             ))}
-            <Button className="bg-[#E53A32] hover:bg-[#E53A32]/90">
-              Request Care Consultation
-            </Button>
+            <div className="flex space-x-4">
+              <a href="#" className="text-[#E53A32] hover:text-[#E53A32]/80 transition-colors">
+                <Facebook className="h-5 w-5" />
+              </a>
+              <a href="#" className="text-[#E53A32] hover:text-[#E53A32]/80 transition-colors">
+                <Twitter className="h-5 w-5" />
+              </a>
+              <a href="#" className="text-[#E53A32] hover:text-[#E53A32]/80 transition-colors">
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a href="#" className="text-[#E53A32] hover:text-[#E53A32]/80 transition-colors">
+                <LinkedIn className="h-5 w-5" />
+              </a>
+            </div>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -89,9 +100,20 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
-              <Button className="bg-[#E53A32] hover:bg-[#E53A32]/90 w-full">
-                Request Care Consultation
-              </Button>
+             <div className="flex space-x-4">
+              <a href="#" className="text-[#E53A32] hover:text-[#E53A32]/80 transition-colors">
+                <Facebook className="h-5 w-5" />
+              </a>
+              <a href="#" className="text-[#E53A32] hover:text-[#E53A32]/80 transition-colors">
+                <Twitter className="h-5 w-5" />
+              </a>
+              <a href="#" className="text-[#E53A32] hover:text-[#E53A32]/80 transition-colors">
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a href="#" className="text-[#E53A32] hover:text-[#E53A32]/80 transition-colors">
+                <LinkedIn className="h-5 w-5" />
+              </a>
+            </div>
             </div>
           </motion.nav>
         )}

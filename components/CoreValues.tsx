@@ -43,7 +43,7 @@ const CoreValues = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-primary font-montserrat mb-4">
-            Our Foundation of Care
+            Our Core Values
           </h2>
           <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
             Built on principles that ensure exceptional care and support for every individual
@@ -60,7 +60,7 @@ const CoreValues = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
             >
-              <value.icon className="h-12 w-12 text-[#026FBF] mb-4" />
+              <value.icon className="h-12 w-12 text-[#E53A32] mb-4" />
               <h3 className="text-xl font-semibold mb-3 font-montserrat">{value.title}</h3>
               <p className="text-foreground/70">{value.description}</p>
             </motion.div>

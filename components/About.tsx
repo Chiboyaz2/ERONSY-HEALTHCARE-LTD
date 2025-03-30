@@ -24,42 +24,42 @@ const About = () => {
             </p>
             <div className="grid grid-cols-2 gap-6">
               <div className="flex items-start space-x-3">
-                <Award className="h-6 w-6 text-[#026FBF]" />
+                <Award className="h-6 w-6 text-[#E53A32]" />
                 <div>
                   <h3 className="font-semibold mb-1">Excellence</h3>
                   <p className="text-sm text-foreground/70">20+ years experience</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Users className="h-6 w-6 text-[#026FBF]" />
+                <Users className="h-6 w-6 text-[#E53A32]" />
                 <div>
                   <h3 className="font-semibold mb-1">Expert Team</h3>
                   <p className="text-sm text-foreground/70">Dedicated professionals</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Brain className="h-6 w-6 text-[#026FBF]" />
+                <Brain className="h-6 w-6 text-[#E53A32]" />
                 <div>
                   <h3 className="font-semibold mb-1">Specialized Care</h3>
                   <p className="text-sm text-foreground/70">Mental health focus</p>
                 </div>
-              </div>
+              </div> 
               <div className="flex items-start space-x-3">
-                <Heart className="h-6 w-6 text-[#026FBF]" />
+                <Heart className="h-6 w-6 text-[#E53A32]" />
                 <div>
                   <h3 className="font-semibold mb-1">Compassionate</h3>
                   <p className="text-sm text-foreground/70">Patient-centered care</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Target className="hidden lg:block h-20 w-20 text-[#026FBF]" />
+                <Target className="hidden lg:block h-20 w-20 text-[#E53A32]" />
                 <div>
                   <h3 className="font-semibold mb-1">MISSION STATEMENT:</h3>
                   <p className="text-sm text-foreground/70">To contribute to the overall healthcare team by promoting highest standards of professionalism that will exceed the expectation of service users. </p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Eye className="h-20 w-20 hidden lg:block text-[#026FBF]" />
+                <Eye className="h-20 w-20 hidden lg:block text-[#E53A32]" />
                 <div>
                   <h3 className="font-semibold mb-1">VISION STATEMENT:</h3>
                   <p className="text-sm text-foreground/70">To be recognized as integral members of the healthcare team through our exceptional support and dedication to improving the wellbeing of services users.</p>
