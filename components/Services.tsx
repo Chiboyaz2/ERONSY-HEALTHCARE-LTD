@@ -80,7 +80,7 @@ const Services = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="service-card bg-white rounded-xl shadow-lg overflow-hidden"
             >
-              <div className="relative h-48 lg:h-[250px]">
+              <div className="relative h-48 lg:h-[310px]">
                 <Image
                   src={service.image}
                   alt={service.title}
