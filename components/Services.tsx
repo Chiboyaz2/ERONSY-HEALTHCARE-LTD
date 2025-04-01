@@ -85,7 +85,7 @@ const Services = () => {
                   src={service.image}
                   alt={service.title}
                   fill
-                  className="object-cover"
+                  className=""
                 />
               </div>
               <div className="p-6">
