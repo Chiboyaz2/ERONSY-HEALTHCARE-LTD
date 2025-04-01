@@ -26,7 +26,7 @@ const Hero = () => {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-3xl md:text-5xl font-bold  text-white font-montserrat mb-6 mt-4 lg:mt-0">
-            Compassionate in supporting mental health, learning  Disabilities and Autism.
+            Compassionate in supporting Mental Health, Learning  Disabilities and Autism.
             </h1>
             <p className="text-xl text-white/90 mb-8">
               Patient-centered support services tailored to individual needs

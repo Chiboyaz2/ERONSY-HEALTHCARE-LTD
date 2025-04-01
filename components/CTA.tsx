@@ -35,7 +35,7 @@ const CTA = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button
               size="lg"
-              className="bg-white text-[#E53A32] hover:bg-white/90 flex items-center gap-2"
+              className="bg-white text-[#333333] hover:bg-white/90 flex items-center gap-2"
               onClick={handleCallClick}
             >
               <Phone className="h-5 w-5" />
