@@ -5,6 +5,7 @@ import { Bath, Activity, Armchair as Wheelchair, Pill, Utensils, MessageCircle, 
 import Image from 'next/image';
 import ECG from '@/app/images/Medical Device.jpg'
 import Infection from '@/app/images/Infection control.jpg'
+import Patient from '@/app/images/Patient Pictures.jpg'
 
 const services = [
   {
@@ -35,7 +36,7 @@ const services = [
     icon: Utensils,
     title: "Daily Activities",
     description: "We provide support with daily activities, such as feeding service users’ who need assistance, and providing appropriate nutrition and hydration support.",
-    image: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80"
+    image: Patient,
   },
   {
     icon: MessageCircle,
